@@ -2,3 +2,26 @@
 body {
     background-color: black;
 }
+
+.navbar2 li {
+    list-style: none;
+    text-align: center;
+}
+
+.navbar2 {
+    background-color: black;
+}
+
+.navbar2 a {
+    text-decoration: none;
+    color:#ced7d5;
+}
+
+footer {
+    background-color: black ;
+}
+
+footer img {
+    background-color: #ced7d5; 
+}
+
