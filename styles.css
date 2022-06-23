@@ -1,0 +1,324 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* setting up the basic styling
+*/
+
+:root {
+    --red: #E50914;
+    --grayblack: #292929;
+    --gray: #8d9d9a;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+
+.container {
+    display: grid;
+    height: 80vh;
+    grid-template-rows: 20vh 10vh 50vh;
+    padding: 4% 5%;
+}
+
+/* styling the header
+*/
+
+
+h1 {
+    color: var(--red);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+}
+
+.logo {
+    grid-area: logo;
+    justify-self: center;
+}
+
+.logo span {
+    vertical-align: top;
+}
+
+
+span:nth-of-type(2) {
+    font-size: 96%;
+}
+
+span:nth-of-type(3) {
+    font-size: 92%;
+}
+
+span:nth-of-type(4) {
+    font-size: 88%;
+}
+
+span:nth-of-type(5) {
+    font-size: 88%;
+}
+
+span:nth-of-type(6) {
+    font-size: 92%;
+}
+
+span:nth-of-type(7) {
+    font-size: 96%;
+}
+
+.options img {
+    height: 25%;
+}
+
+.options {
+    grid-area: options;
+    justify-self: end;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: ". logo options";
+}
+
+/* styling the h2 "title"
+*/
+
+
+h2 {
+    color:#e2ecea;
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* styling the profiles
+*/
+
+
+.profiles {
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 4fr 3fr 3fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    grid-template-areas: ". profile1 profile2 ."
+        ". profile3 profile4 .";
+}
+
+.profiles figcaption {
+    color: var(--gray);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+
+
+.profile1 {
+    grid-area: profile1;
+}
+
+.profile2 {
+    grid-area: profile2;
+}
+
+.profile3 {
+    grid-area: profile3;
+}
+
+.profile4 {
+    grid-area: profile4;
+}
+
+.profile img {
+    object-fit: cover;
+    width: 25vh;
+    height: 25vh;
+    display: block;
+    margin: auto auto;
+    border-radius: 15%;
+}
+
+/* placing the profiles horizontal and adding a hover effect on bigger devices
+*/
+
+@media(min-width: 900px) {
+    .profiles {
+        grid-template-columns: 4fr 3fr 3fr 3fr 3fr 4fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: ". profile1 profile2 profile3 profile4 .";
+        margin-top: 3%;
+    }
+
+    .profiles img{
+        filter: grayscale(80%);
+    }
+
+    .profile1 img:hover {
+        filter: grayscale(0%);
+    }
+
+    .profile2 img:hover {
+        filter: grayscale(0%);
+    }
+
+    .profile3 img:hover {
+        filter: grayscale(0%);
+    }
+
+    .profile4 img:hover {
+        filter: grayscale(0%);
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        color:#ced7d5;
+        font-size: 2.5rem;
+        text-align: center;
+        font-weight: 500;
+    }
+
+
+}
