@@ -3,25 +3,84 @@ body {
     background-color: black;
 }
 
+/* Styling the navbars and footer */
+
+.navbar1 {
+    height: 10vh;
+}
+
+.navbar1 a {
+    height: 100%;
+}
+
+.navbar1 div {
+    height: 60%;
+}
+
+.navbar1 img {
+    height: 100%;
+    object-fit: contain;
+    object-position: top;
+    width: 100%; 
+}
+
+.profilelogo img {
+    border-radius: 20%;
+}
+
+
+.navbar2 {
+    height: 7vh;
+    background-color: #000000d4;
+}
+
 .navbar2 li {
     list-style: none;
     text-align: center;
 }
 
-.navbar2 {
-    background-color: black;
-}
-
 .navbar2 a {
     text-decoration: none;
     color:#ced7d5;
+    transition: 300ms;
+}
+
+.navbar2 a:hover {
+    color:#949a99;
 }
 
 footer {
-    background-color: black ;
+    background-color: black;
+    height: 7vh;
+}
+
+footer a {
+    height: 100%;
+    text-decoration: none;
 }
 
 footer img {
     background-color: #ced7d5; 
 }
 
+footer section {
+    height: 100%;
+}
+
+footer h3 {
+    font-size: 0.8em;
+    text-align: center;
+    color: #ced7d5; 
+}
+
+/* Styling the mainpage */
+
+.featuring {
+    height: 60vh;
+}
+
+.featuring img {
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
