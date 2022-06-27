@@ -1,16 +1,23 @@
 
 body {
     background-color: black;
-}
+    overflow-x: hidden;
+} 
 
 /* Styling the navbars and footer */
 
 .navbar1 {
     height: 10vh;
+    z-index: 2;
 }
 
 .navbar1 a {
     height: 100%;
+    text-decoration: none;
+    color: #E50914;
+    font-weight: 700;
+    transition: 300ms;
+    font-size: 1rem;
 }
 
 .navbar1 div {
@@ -24,29 +31,25 @@ body {
     width: 100%; 
 }
 
+        
+.navbar1.scrolled {
+    background: rgba(0, 0, 0, 0.49);
+    transition: background 500ms;
+}
+
 .profilelogo img {
     border-radius: 20%;
 }
 
 
-.navbar2 {
-    height: 7vh;
-    background-color: #000000d4;
-}
-
-.navbar2 li {
+.navbar1 li {
     list-style: none;
     text-align: center;
 }
 
-.navbar2 a {
-    text-decoration: none;
-    color:#ced7d5;
-    transition: 300ms;
-}
 
-.navbar2 a:hover {
-    color:#949a99;
+.navbar1 a:hover {
+    color: #da676d;
 }
 
 footer {
@@ -76,7 +79,10 @@ footer h3 {
 /* Styling the mainpage */
 
 .featuring {
-    height: 60vh;
+    height: 80vh;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
 }
 
 .featuring img {
