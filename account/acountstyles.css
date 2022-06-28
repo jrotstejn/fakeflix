@@ -1,0 +1,57 @@
+
+body {
+    background-color: #f3f3f3;
+    overflow-x: hidden;
+} 
+
+/* Styling the navbars and footer */
+
+.navbar1 {
+    height: 10vh; 
+    background-color: black;
+}
+
+.navbar1 img {
+    height: 100%;
+    object-fit: contain;
+    object-position: top;
+    width: 100%; 
+}
+
+.profilelogo img {
+    border-radius: 40%;
+}
+
+.navbar1 a {
+    height: 100%;
+}
+
+
+.navbar1 .profilelogo {
+    height: 60%;
+}
+
+main h1 {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; 
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+main .member{
+    color: #555; 
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+main .memberinfo { 
+    height: 100%;
+}
+
+
+header {
+    height: 10vh;
+}
+
+.container {
+    width: 68%;
+}

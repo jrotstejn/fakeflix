@@ -33,12 +33,12 @@ body {
 
         
 .navbar1.scrolled {
-    background: rgba(0, 0, 0, 0.49);
+    background: rgba(0, 0, 0, 0.733);
     transition: background 500ms;
 }
 
 .profilelogo img {
-    border-radius: 20%;
+    border-radius: 40%;
 }
 
 
