@@ -11,28 +11,189 @@
 </head>
 
 <body>
-    <nav class="navbar1 row justify-content-between pt-1 sticky-top">
-        <a href="#" class="F col-2 col-lg-1 pe-0"><img src="../mainpage/mainimages/F.png" alt="#"></a>
-        <a href="../index.html" title="Change Profile"
-            class="col-2 col-lg-1 mx-0 px-0 profilelogo align-self-center"><img class="img-fluid"
-                src="../images/dad.jpg" alt="#"></a>
-    </nav>
-    <main class="container">
+    <div class="maincontainer">
+        <nav class="navbar1 row justify-content-between pt-1 sticky-top">
+            <a onclick="history.back()" href="#" class="F col-2 col-lg-1 pe-0"><img src="../mainpage/mainimages/F.png"
+                    alt="#"></a>
+            <a href="../index.html" title="Change Profile"
+                class="col-2 col-lg-1 mx-0 px-0 profilelogo align-self-center"><img class="img-fluid"
+                    src="../images/dad.jpg" alt="#"></a>
+        </nav>
+        <div class="containergrid row">
+            <main class="container col-10 col-lg-8">
+                <header class="row align-items-center pt-4 mx-0">
+                    <h1 class="px-0 col-xl-2 col-5">Account</h1>
+                    <div class="memberinfo px-0 col-xl-4 col-7 row justify-content-start align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40%" height="40%" fill="#E50914"
+                            class="bi bi-collection-play col-2 px-0" viewBox="0 0 16 16">
+                            <path
+                                d="M2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3zm2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1zm2.765 5.576A.5.5 0 0 0 6 7v5a.5.5 0 0 0 .765.424l4-2.5a.5.5 0 0 0 0-.848l-4-2.5z" />
+                            <path
+                                d="M1.5 14.5A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5h-13zm13-1a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5h-13A.5.5 0 0 0 1 6v7a.5.5 0 0 0 .5.5h13z" />
+                        </svg>
+                        <p class="member col-9 mb-0 px-0">Member Since April 2019</p>
+                    </div>
+                </header>
+                <section class="membership py-4 mt-3">
+                    <div class="row mx-0">
+                        <div class="cancel-membership row col-lg-4 px-0 mx-0">
+                            <h2 class="fs-6 px-0 text-secondary">MEMBERSHIP AND BILLING</h2>
+                            <button class="px-2 fs-7">Cancel Membership</button>
+                        </div>
+                        <div class="col-lg-8 row px-0 mx-0">
+                            <div class="col-5 px-0">
+                                <div class="contact">
+                                    <p class="row m-0 fw-bold">testaccount@netflix.com</p>
+                                    <p class="row m-0  text-secondary">Password: ******</p>
+                                    <p class="row m-0  text-secondary">Phone: +32 11 32 43 54</p>
+                                </div>
+                                <div class="creditcard pt-md-3 border-top border-bottom">
+                                    <div class="cardinfo">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                            fill="currentColor" class="bi bi-credit-card pe-1" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
+                                            <path
+                                                d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
+                                            <p class="d-inline-block m-0 fw-bold">•••• •••• •••• 5939</p>
+                                        </svg>
+                                    </div>
+                                    <p class="row mx-0">Your next billing date is August 20, 2022.</p>
+                                </div>
+                            </div>
+                            <div class="col-7 px-0 mx-0">
+                                <ul class="contact  justify-content-end ps-0 mb-0">
+                                    <li class="text-end link-primary">Change account email</li>
+                                    <li class="text-end link-primary">Change password</li>
+                                    <li class="text-end link-primary">Change phone number</li>
+                                    <li class="text-end link-primary">Verify phone number</li>
+                                </ul>
+                                <ul class="creditcard border-top pt-md-3 ps-0 mb-0">
+                                    <li class="text-end link-primary">Manage payment info</li>
+                                    <li class="text-end link-primary">Add backup payment method</li>
+                                    <li class="text-end link-primary">Billing details</li>
+                                    <li class="text-end link-primary">Change billing day</li>
+                                </ul>
+                                <ul class="gift border-top pt-md-3 ps-0 mb-0">
+                                    <li class="text-end link-primary">Redeem gift card or promo code</li>
+                                    <li class="text-end link-primary">Where to buy gift cards</li>
+                                </ul>
+                            </div>
+                        </div>
 
-        <header class="row align-items-center pt-4">
-            <h1 class="col-lg-2 col-4">Account</h1>
-            <div class="memberinfo col-lg-4 col-8 row justify-content-start align-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="35%" height="35%" fill="#E50914"
-                class="bi bi-collection-play col-2 px-0" viewBox="0 0 16 16">
-                <path
-                    d="M2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3zm2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1zm2.765 5.576A.5.5 0 0 0 6 7v5a.5.5 0 0 0 .765.424l4-2.5a.5.5 0 0 0 0-.848l-4-2.5z" />
-                <path
-                    d="M1.5 14.5A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5h-13zm13-1a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5h-13A.5.5 0 0 0 1 6v7a.5.5 0 0 0 .5.5h13z" />
-            </svg>
-            <p class="member col-9 mb-0 px-0">Member Since April 2019</p>
+                    </div>
+                </section>
+                <section class="plan py-4">
+                    <div class="row mx-0">
+                        <div class="plan-details row col-lg-4 px-0 mx-0">
+                            <h2 class="fs-6 text-secondary px-0">PLAN DETAILS</h2>
+                        </div>
+                        <div class="col-lg-8 row px-0 mx-0">
+                            <div class="col-7 px-0">
+                                <p class="d-inline-block row m-0 fw-bold">Premium Ultra</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                                    class="bi bi-badge-hd" viewBox="0 0 16 16">
+                                    <path
+                                        d="M7.396 11V5.001H6.209v2.44H3.687V5H2.5v6h1.187V8.43h2.522V11h1.187zM8.5 5.001V11h2.188c1.811 0 2.685-1.107 2.685-3.015 0-1.894-.86-2.984-2.684-2.984H8.5zm1.187.967h.843c1.112 0 1.622.686 1.622 2.04 0 1.353-.505 2.02-1.622 2.02h-.843v-4.06z" />
+                                    <path
+                                        d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z" />
+                                </svg>
+                            </div>
+                            <div class="col-5 px-0 mx-0">
+                                <ul class="contact  justify-content-end ps-0 mb-0">
+                                    <li class="text-end link-primary">Change plan</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                </section>
+                <section class="profiles py-4">
+                    <div class="row mx-0">
+                        <div class="plan-details row col-lg-4 px-0 mx-0">
+                            <h2 class="fs-6 text-secondary px-0">PROFILE AND PARENTAL CONTROL</h2>
+                        </div>
+                        <div class="clickable-profiles col-lg-8 row px-0 mx-0">
+                            <div class="dad row mx-0 px-0 pb-2 align-items-center">
+                                <div class="col-4 col-md-2 ps-0">
+                                    <img class="img-fluid px-0" src="/images/dad.jpg" alt="dad">
+                                </div>
+                                <div class="dad-text col-6 col-md-8 pt-3 pt-sm-4 pt-md-2 pt-lg-0 pt-xl-1">
+                                    <h2 class="mb-0 fs-4">Dad</h2>
+                                    <p class="mb-0">All maturity ratings</p>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="gray"
+                                    class="bi bi-arrow-down col-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+                                </svg>
+                            </div>
+                            <div class="mom row mx-0 px-0 border-top align-items-center">
+                                <div class="col-4 col-md-2 ps-0">
+                                    <img class="img-fluid px-0 py-2" src="/images/mom.jpg" alt="mom">
+                                </div>
+                                <div class="dad-text col-6 col-md-8 pt-3 pt-sm-4 pt-md-2 pt-lg-0 pt-xl-1">
+                                    <h2 class="mb-0 fs-4">Mom</h2>
+                                    <p class="mb-0">All maturity ratings</p>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="gray"
+                                    class="bi bi-arrow-down col-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+                                </svg>
+                            </div>
+                            <div class="kids row mx-0 px-0 py-2 border-top align-items-center">
+                                <div class="col-4 col-md-2 ps-0">
+                                    <img class="img-fluid px-0" src="/images/kids.jpg" alt="kids">
+                                </div>
+                                <div class="dad-text col-6 col-md-8 pt-3 pt-sm-4 pt-md-2 pt-lg-0 pt-xl-1">
+                                    <h2 class="mb-0 fs-4">Kids</h2>
+                                    <p class="mb-0">All maturity ratings</p>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="gray"
+                                    class="bi bi-arrow-down col-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+                                </svg>
+                            </div>
+                            <div class="family row mx-0 px-0 py-2 border-top align-items-center">
+                                <div class="col-4 col-md-2 ps-0">
+                                    <img class="img-fluid px-0" src="/images/family.jpg" alt="family">
+                                </div>
+                                <div class="dad-text col-6 col-md-8 pt-3 pt-sm-4 pt-md-2 pt-lg-0 pt-xl-1">
+                                    <h2 class="mb-0 fs-4">Family</h2>
+                                    <p class="mb-0">All maturity ratings</p>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="gray"
+                                    class="bi bi-arrow-down col-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="settings py-4">
+                    <div class="row mx-0">
+                        <div class="row col-lg-4 px-0 mx-0">
+                            <h2 class="fs-6 text-secondary px-0">SETTINGS</h2>
+                        </div>
+                        <div class="col-lg-8 row px-0 mx-0">
+                            <ul class="px-0">
+                                <li class="link-primary">Test participation</li>
+                                <li class="link-primary">Manage download devices</li>
+                                <li class="link-primary">Recent device streaming activity</li>
+                                <li class="link-primary">Sign out of all devices</li>
+                                <li class="link-primary">Download your personal information</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </main>
         </div>
-        </header>
-    </main>
+    </div>
+    <footer class="border-top px-5 pt-4">
+        <p class="text-secondary fs-6 ps-3">Questions? Contact us.</p>
+    </footer>
     <script>
         src = "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"; 
     </script>

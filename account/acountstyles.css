@@ -2,12 +2,13 @@
 body {
     background-color: #f3f3f3;
     overflow-x: hidden;
+    line-height: 1.8rem;
 } 
 
 /* Styling the navbars and footer */
 
 .navbar1 {
-    height: 10vh; 
+    height: 12vh; 
     background-color: black;
 }
 
@@ -25,7 +26,6 @@ body {
 .navbar1 a {
     height: 100%;
 }
-
 
 .navbar1 .profilelogo {
     height: 60%;
@@ -52,6 +52,48 @@ header {
     height: 10vh;
 }
 
-.container {
-    width: 68%;
+.creditcard, .contact {
+    height: 20vh;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    transition: 1s;
+}
+
+li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.cancel-membership  {
+    height: 10vh;
+}
+
+.cancel-membership button {
+    width: 58%;
+    border-style: none;
+    background-color:rgb(224, 221, 221); 
+    border-radius: 5%;
+    transition: 100ms;
+    font-size: 0.9rem;
+}
+
+.cancel-membership button:hover {
+    background-color:rgba(224, 221, 221, 0.722); 
+}
+
+section {
+    border-top: 0.08rem solid rgb(108,117,125); 
+}
+
+.plan {
+    height: 15vh;
+}
+
+.clickable-profiles:hover {
+    cursor: pointer;
 }
