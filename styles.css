@@ -154,13 +154,13 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 3fr 1fr 2fr 2fr;
+    grid-template-rows: 2fr 1fr 2fr 2fr;
     grid-template-columns: 1fr 2fr 2fr 1fr;
     grid-template-areas: ". logo logo options"
                          ". title title ."
                          ". profile1 profile2 ."
                          ". profile3 profile4 ."; 
-    height: 80vh;
+    height: 70vh;
     padding: 20px 20px;
 }
 
